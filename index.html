@@ -209,6 +209,13 @@ $(document).ready(function(){
     });
   });
 })
+
+$('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
+
+</script>
+
 <!-- Adding Sevice Worker -->
  <script>
       (function() {
@@ -227,11 +234,7 @@ navigator.serviceWorker.register('service-worker.js')
       })();
     </script>
 <!-- Service Worker end -->
-$('.navbar-collapse a').click(function(){
-        $(".navbar-collapse").collapse('hide');
-    });
 
-</script>
 
 </body>
 </html>
